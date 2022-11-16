@@ -18,4 +18,135 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>博客搭建教程</title>
+    <url>/2022/11/17/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h4 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h4><h6 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h6><ul>
+<li>本文是笔者参考B站UP主视频搬运崽啊的<a class="link"   href="https://www.bilibili.com/video/BV1mU4y1j72n?p=5" >教学视频<i class="fas fa-external-link-alt"></i></a>搭建了自己的博客后，写的一篇总结，在这里向<a class="link"   href="https://space.bilibili.com/441519471?spm_id_from=333.788.b_765f7570696e666f.2" >视频搬运崽<i class="fas fa-external-link-alt"></i></a>致谢！之前只是一味的学知识，表达能力极差，也想通过写博客增强自己的表达能力。</li>
+</ul>
+<h6 id="谁适合这篇博客"><a href="#谁适合这篇博客" class="headerlink" title="谁适合这篇博客"></a>谁适合这篇博客</h6><ul>
+<li><p>如果你是一个大牛，正在网上冲浪，那么这篇文章会浪费您宝贵的三分钟。</p>
+</li>
+<li><p>如果你是一个小白，想要搭建自己的博客，却屡屡碰壁，那么请您耐心地看下去。</p>
+</li>
+</ul>
+<h6 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h6><ul>
+<li>网络问题：在执行<code>hexo d</code>等命令时，报错<code>spawned failed/access failed</code>,这些因为我天朝独特的网络原因，导致连接失败，耐心点，多试几次就好。</li>
+</ul>
+<h4 id="准备工具下载安装"><a href="#准备工具下载安装" class="headerlink" title="准备工具下载安装"></a>准备工具下载安装</h4><h6 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h6><ul>
+<li><a class="link"   href="https://nodejs.org/dist/v14.17.6/node-v14.17.6-x64.msi" >点击下载Node.js<i class="fas fa-external-link-alt"></i></a></li>
+<li>一直点下一步就行，如果有需要，可以参考这篇博客：<a class="link"   href="https://www.cnblogs.com/liuqiyun/p/8133904.html" >Node.js安装及环境配置之Windows篇<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h6 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h6><ul>
+<li><a class="link"   href="https://github.com/git-for-windows/git/releases/download/v2.33.0.windows.2/Git-2.33.0.2-64-bit.exe" >点击下载Git<i class="fas fa-external-link-alt"></i></a></li>
+<li>安装参考这篇教程：<a class="link"   href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html" >Windows系统Git安装教程(详解Git安装过程)<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h6 id="检测是否安装正确"><a href="#检测是否安装正确" class="headerlink" title="检测是否安装正确"></a>检测是否安装正确</h6><ul>
+<li><p>win+R键，然后输入cmd打开终端窗口</p>
+</li>
+<li><p>分别输入下面三行命令，检查工具是否安装成功：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line">git --version</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果分别显示了版本号，那么恭喜你安装成功！</p>
+</li>
+</ul>
+<h6 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h6><ul>
+<li>在终端输入命令<code>npm install hexo-cli -g</code>安装hexo</li>
+<li>输入<code>hexo -v</code>查看是否安装成功，如果看到了hexo版本号，那么恭喜你完成了第一步。</li>
+</ul>
+<h4 id="搭建仓库"><a href="#搭建仓库" class="headerlink" title="搭建仓库"></a>搭建仓库</h4><h6 id="GitHub账号"><a href="#GitHub账号" class="headerlink" title="GitHub账号"></a>GitHub账号</h6><ul>
+<li>首先你要有一个GitHub的账号，申请注册等不再赘述</li>
+<li>需要注意的是，你一定要记住自己的三个信息</li>
+<li><ul>
+<li>用户名：比如笔者的用户名就是Hasakki23,取自笔者很喜欢的一个英雄yasuo</li>
+<li>注册邮箱：形式是”<a class="link"   href="mailto:&#120;&#x78;&#x78;&#x78;&#120;&#120;&#x78;&#64;&#x78;&#x78;&#46;&#x63;&#x6f;&#109;" >&#120;&#x78;&#x78;&#x78;&#120;&#120;&#x78;&#64;&#x78;&#x78;&#46;&#x63;&#x6f;&#109;<i class="fas fa-external-link-alt"></i></a>“</li>
+<li>密码：这个自己记住就行</li>
+</ul>
+</li>
+</ul>
+<h6 id="创建GitHub仓库"><a href="#创建GitHub仓库" class="headerlink" title="创建GitHub仓库"></a>创建GitHub仓库</h6><p><img src="/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/image-20210919194345642.png"></p>
+<ul>
+<li>点击new</li>
+</ul>
+<p><img src="/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/image-20210919194913234.png"></p>
+<ul>
+<li>Repository name填写 <code>用户名</code>+<code>.github.io</code></li>
+<li>勾选 add a readme file</li>
+</ul>
+<p>仓库创建成功</p>
+<h4 id="生成SSH-Keys"><a href="#生成SSH-Keys" class="headerlink" title="生成SSH Keys"></a>生成SSH Keys</h4><h6 id="电脑是否有SSH"><a href="#电脑是否有SSH" class="headerlink" title="电脑是否有SSH"></a>电脑是否有SSH</h6><ul>
+<li>随便进入一个本地文件</li>
+<li>在空白处右键，选择<code>Git Bash Here</code>，打开命令窗口</li>
+<li>输入<code>ssh</code>;检测是否有ssh,应该是都有的</li>
+</ul>
+<h6 id="生成SSH"><a href="#生成SSH" class="headerlink" title="生成SSH"></a>生成SSH</h6><ul>
+<li>输入ssh：<code>ssh-keygen -t rsa -C &quot;你的注册邮箱&quot;</code>，接下来点击四次回车。<strong>完成后不要关闭</strong></li>
+<li>找到<code>C盘-&gt;User-&gt;你电脑的当前用户-&gt;.ssh-&gt;id.rsa.pub</code>，用nodepad++打开，将里面的内容全部复制</li>
+</ul>
+<h6 id="在Github中添加你的SSH"><a href="#在Github中添加你的SSH" class="headerlink" title="在Github中添加你的SSH"></a>在Github中添加你的SSH</h6><ul>
+<li>回到github，点击头像，找到下拉菜单里的Settings选项，左边选项栏找到SSH,点击进入</li>
+<li>在SSH Keys中，选择新建钥匙，钥匙名字随便取，将刚刚id.rsa.pub中的内容粘贴进去，<strong>不要做任何删改！</strong></li>
+<li>在刚才的命令窗口中，输入<code>ssh -T git@github.com </code>,检查是否绑定成功。</li>
+<li>看到<code>yes/no</code>时，输入yes</li>
+<li>绑定成功后会提醒绑定成功！</li>
+</ul>
+<h4 id="生成本地页面"><a href="#生成本地页面" class="headerlink" title="生成本地页面"></a>生成本地页面</h4><ul>
+<li>首先建立一个自己的博客文件夹</li>
+<li>进入文件夹，空白处右键，<code>Git Bash Here</code></li>
+<li>初始化hexo,输入<code>hexo init</code>，完成初始化后，你的博客文件夹会出现一些配置文件</li>
+<li>生成静态页面：输入<code>hexo server</code>，启动服务器后，你就可以在<a class="link"   href="http://localhost:4000/%E7%9C%8B%E5%88%B0%E8%87%AA%E5%B7%B1%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%9D%99%E6%80%81%E9%A1%B5%E9%9D%A2%E4%BA%86%EF%BC%8C%E4%BD%86%E6%98%AF%E8%BF%99%E4%B8%AA%E9%A1%B5%E9%9D%A2%E5%88%AB%E4%BA%BA%E6%9A%82%E6%97%B6%E8%BF%98%E7%9C%8B%E4%B8%8D%E5%88%B0" >http://localhost:4000/看到自己博客的静态页面了，但是这个页面别人暂时还看不到<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h4 id="同步到个人博客"><a href="#同步到个人博客" class="headerlink" title="同步到个人博客"></a>同步到个人博客</h4><ul>
+<li>将你生成的博客发布到互联网上去，和大家分享！</li>
+</ul>
+<h6 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h6><ul>
+<li><p>找到你博客文件夹上的<code>_config.yml</code>文件，用nodepad++打开</p>
+</li>
+<li><p>找到deploy的部分，将deploy部分删除，替换为下面的代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: xxx.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+
+<p>type:填git</p>
+<p>repository:回到github，找到你刚才创建的仓库</p>
+<p><img src="/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/image-20210919202209964.png"></p>
+<p>图中的选项就是你的仓库地址！</p>
+</li>
+</ul>
+<p>更新：这里如果选择Https的格式，经常会出现Spawn failed 所以请选用SSH的格式！</p>
+<p>  branch:填<strong>main</strong>,这是github的一项改动，网上很多教程是master,但填写master是无法工作的！</p>
+<p>  <strong>注意：在type,repository,branch 三个选项后填写内容时，要在冒号后面加一个英文的空格！</strong></p>
+<h6 id="同步到个人博客-1"><a href="#同步到个人博客-1" class="headerlink" title="同步到个人博客"></a>同步到个人博客</h6><ul>
+<li>空白处右键，<code>Git Bash Here</code>，进入命令窗口</li>
+<li>安装hexo-deployer-git自动部署发布工具：<code>npm install hexo-deployer-git --save</code></li>
+<li>生成：<code>hexo g</code></li>
+<li>发布：<code>hexo d</code></li>
+</ul>
+<h6 id="Github账号密码验证"><a href="#Github账号密码验证" class="headerlink" title="Github账号密码验证"></a>Github账号密码验证</h6><ul>
+<li><p>账号：你的用户名，输入后跳转到密码界面。</p>
+</li>
+<li><p>密码：这里是一个令牌，你要去到Settings-&gt;Developer settings-&gt;Personal access token</p>
+<p><img src="/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/image-20210919203245911.png"></p>
+</li>
+<li><ul>
+<li><p>点击生成令牌</p>
+</li>
+<li><p>配置令牌，名字随便取，权限全部勾选，然后点击生成令牌</p>
+</li>
+<li><p>随后会出现很长一段字符串，这就是令牌。复制到刚才输入密码的界面，粘贴，确定。</p>
+</li>
+<li><p>仓库的网址，就是你的仓库名，即 用户名.github.io</p>
+</li>
+<li><p>接下来就可以在你的博客上分享你的文章了！</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>最初的博客是很丑的:cry:,但是你可以去自主寻找美化博客的方法，个性化你的博客！</p>
+]]></content>
+      <categories>
+        <category>博客建站问题</category>
+      </categories>
+      <tags>
+        <tag>博客搭建</tag>
+      </tags>
+  </entry>
 </search>
